@@ -23,20 +23,22 @@
 		<![endif]-->
 
 	</head>
-
+<?php 
+// echo $sport['golf'][0]['country']
+?>
 
 	<body>
         <div class="container m-5">
         <div class="card">
             <div class="card-header">
-                <?php echo $sport['football'][0]['stadium'] ?> &nbsp; Stadium
+                <?php echo $sport['golf'][0]['stadium'] ?> &nbsp; Stadium
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                <p>country:  <?php echo$sport['football'][0]['country'] ?></p>
-                <p>Tournament  :  <?php echo $sport['football'][0]['tournament'] ?></p>
-                <p>Start :  <?php echo $sport['football'][0]['start'] ?></p>
-                <p>match :  <?php echo $sport['football'][0]['match'] ?></p>
+                <p>country:  <?php echo $sport['golf'][0]['country']?></p>
+                <p>Tournament  :  <?php echo $sport['golf'][0]['tournament'] ?></p>
+                <p>Start :  <?php echo $sport['golf'][0]['start'] ?></p>
+                <p>match :  <?php echo $sport['golf'][0]['match'] ?></p>
                 <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
                 </blockquote>
             </div>

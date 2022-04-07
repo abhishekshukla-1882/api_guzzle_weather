@@ -10,8 +10,9 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-5">
-  <a class="navbar-brand" href="#">Navbar</a>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light p-5 ">
+  <h3 class="text-center"> check Weather of Your City</h3>
+  <!--<a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -48,7 +49,7 @@
         <a class="nav-link " href="role/action">Action</a>
       </li>
     </ul>
-   </div>
+   </div> -->
 </nav>
 <section class="section-products">
 		<div class="container">
@@ -130,24 +131,21 @@
               //  echo "<pre>";
               //       print_r($area['name']);
                ?>
-            <div class="card mt-5" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><?php echo $area[$key]['name'];  ?></h6>
+            <div class="card mt-5 " style="width: 50rem ; margin-left:15%;background-color: #f2f2f2;">
+                <div class="card-body ">
+                  <h5 class="card-title  text-center"><?php echo $area[$key]['name'];  ?></h5><hr>
+                  <h6 class="card-subtitle mb-2 text-muted "><?php echo $area[$key]['name'];  ?></h6>
+                  <div class=" p-2">
                   <p class="card-text"><?php echo $area[$key]['url'];  ?> .</p>
                   <form method="POST" action="index/detail">
-                    <input type="submit" name="area" value="<?php echo $area[$key]['name'];?>">
-                    <!-- <button type="submit" name="history"  class="btn btn-primary">History</button> -->
+                    <input type="submit" class="btn btn-outline-success" name="area" value="<?php echo $area[$key]['name'];?>">
                   </form>
-                  <a href="#" class="card-link">Another link</a>
+                  </div>
                 </div>
             </div>
           <?php } ?>
                </div>
-<form method="POST" action="index/detail">
-  <input type="hidden" value="<?php echo $book['location']['name'];?>">
-  <button type="submit" name="history"  class="btn btn-primary">History</button>
-</form>
+
 </div>
 	<?php  ?>		
 </section>

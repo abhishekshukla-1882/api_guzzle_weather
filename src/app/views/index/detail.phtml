@@ -59,7 +59,20 @@
               <button type="submit" name="history"  class="btn btn-primary">Sports</button>
             </form>
           </div>
+          <div class="col-sm">
+            <form method="POST" action="/index/air">
+              <input type="hidden" name="city" value="<?php echo $weather['location']['name'];?>">
+              <button type="submit" name="history"  class="btn btn-primary">Air Quality</button>
+            </form>
+          </div>
+          <div class="col-sm">
+            <form method="POST" action="/index/alert">
+              <input type="hidden" name="alert" value="<?php echo $weather['location']['name'];?>">
+              <button type="submit" name="history"  class="btn btn-primary">Weather Alert</button>
+            </form>
+          </div>
     </div>
+
   </div>
   
     <section class="vh-100" style="background-color: #4B515D;">
